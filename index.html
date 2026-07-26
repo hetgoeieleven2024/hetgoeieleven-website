@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Het Goeie Leven — Foodtruck &amp; IJskar voor jouw event</title>
-<meta name="description" content="Het Goeie Leven brengt pasta's, burgers en ambachtelijk schepijs naar jouw feest of event. Foodtruck en vintage ijskar in Munkzwalm en omstreken.">
+<meta name="description" content="Het Goeie Leven brengt pasta's, burgers, nacho's en ambachtelijk schepijs naar jouw feest of event. Foodtruck en vintage ijskar in Munkzwalm en omstreken.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,340..900;1,340..900&family=Work+Sans:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
@@ -252,7 +252,7 @@
   }
   .concepts .section-head p{color:var(--cream-soft);}
   .ticket-row{
-    display:grid; grid-template-columns:repeat(3, 1fr); gap:28px;
+    display:grid; grid-template-columns:repeat(4, 1fr); gap:28px;
   }
   .ticket{
     background:var(--cream);
@@ -348,15 +348,21 @@
   .footer-row .logo{color:var(--cream);}
   .footer-links{display:flex; gap:22px; list-style:none;}
 
+  @media (max-width: 1000px){
+    .ticket-row{grid-template-columns:repeat(2, 1fr);}
+  }
   @media (max-width: 860px){
     .nav-links, .nav-phone{display:none;}
     .nav-toggle{display:block;}
     .hero-grid{grid-template-columns:1fr;}
     .hero-art{order:-1;}
     .about, .contact-grid{grid-template-columns:1fr;}
-    .ticket-row, .postcards{grid-template-columns:1fr;}
+    .postcards{grid-template-columns:1fr;}
     .form-row{grid-template-columns:1fr;}
     section{padding:64px 0;}
+  }
+  @media (max-width: 560px){
+    .ticket-row{grid-template-columns:1fr;}
   }
   @media (prefers-reduced-motion: reduce){
     *{transition:none !important; scroll-behavior:auto !important;}
@@ -384,7 +390,7 @@
     <div>
       <p class="eyebrow on-dark">Foodtruck &amp; ijskar · Munkzwalm en omstreken</p>
       <h1>Goed eten,<br>goeie sfeer,<br><em>overal waar wij stoppen.</em></h1>
-      <p class="lead">Van pasta's en burgers tot ambachtelijk schepijs: wij brengen het goeie leven naar jouw feest, bedrijfsevent of beurs.</p>
+      <p class="lead">Van pasta's, burgers en nacho's tot ambachtelijk schepijs: wij brengen het goeie leven naar jouw feest, bedrijfsevent of beurs.</p>
       <div class="hero-ctas">
         <a href="#contact" class="btn btn-primary">Vraag een offerte aan</a>
         <a href="#wat-we-doen" class="btn btn-ghost">Bekijk onze concepten</a>
@@ -414,7 +420,7 @@
       <div class="highlight">"Stap voor stap uitgegroeid tot een vaste waarde in Vlaanderen. En dit is nog maar het begin."</div>
       <img class="about-photo" src="pastabar-gevel.jpg" alt="De pastabar van Het Goeie Leven op een pleintje bij een festival">
       <div class="stat-row">
-        <div class="stat"><b>3</b><span>foodconcepten</span></div>
+        <div class="stat"><b>4</b><span>foodconcepten</span></div>
         <div class="stat"><b>100%</b><span>aanbevolen door klanten</span></div>
         <div class="stat"><b>Sinds '22</b><span>actief op events in Vlaanderen</span></div>
       </div>
@@ -426,7 +432,7 @@
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow on-dark">Halte 02 — Wat we doen</p>
-      <h2>Drie concepten, één goeie sfeer.</h2>
+      <h2>Vier concepten, één goeie sfeer.</h2>
       <p>Los te boeken of gecombineerd — wij stemmen af op jouw event, van bedrijfsfeest tot bruiloft of beurs.</p>
     </div>
     <div class="ticket-row">
@@ -447,6 +453,12 @@
         <h3>De ijskar</h3>
         <p>Een vintage VW LT, omgebouwd tot mini-brandweerwagen, vol ambachtelijk schepijs. Dé blikvanger en zoete afsluiter van elk event.</p>
         <p class="tag">Ijskar</p>
+      </div>
+      <div class="ticket">
+        <img class="photo" src="nachobar-chupapi.jpg" alt="De Nachobar Chupapi foodtruck van Het Goeie Leven">
+        <h3>Nachobar Chupapi</h3>
+        <p>Knapperige nacho's met huisgemaakte toppings en een Mexicaanse fiësta-sfeer. Van Spicy Tornado tot gedeelde schotels — dé smaakmaker voor elk event.</p>
+        <p class="tag">Foodtruck</p>
       </div>
     </div>
   </div>
